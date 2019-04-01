@@ -9,6 +9,8 @@
 * `Profiles` -> `Advanced` -> `Semantic History` -> `Open with editor...` -> `TextMate`
 
 ### [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835?l=en&mt=12)
+
+Install command line tools:
 ```
 xcode-select --install
 ```
@@ -42,3 +44,28 @@ plugins=(
 )
 ```
 
+## dotfiles
+
+### .gitconfig
+
+```
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ba = branch -a
+	baf = branch -a --list "feature/*"
+	rh = reset --hard HEAD
+	cam = commit -am
+	pr = pull --rebase
+  fp = fetch --prune
+  ftp = fetch --tags --prune
+[user]
+	name = <me>
+	email = <email>
+```
+
+Or execute lines below to add `[user]` part:
+
+```
+git config --global user.name <me>
+git config --global user.email <email>
+```
