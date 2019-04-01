@@ -56,8 +56,8 @@ plugins=(
 	rh = reset --hard HEAD
 	cam = commit -am
 	pr = pull --rebase
-  fp = fetch --prune
-  ftp = fetch --tags --prune
+	fp = fetch --prune
+	ftp = fetch --tags --prune
 [user]
 	name = <me>
 	email = <email>
