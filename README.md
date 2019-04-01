@@ -1,10 +1,21 @@
 # macOS setup
 
 ## Prerequisites
-- [Homebrew](https://brew.sh/)
-- 
 
-### Install zsh
+### [TextMate](https://macromates.com/)
+
+### [iTerm2](https://www.iterm2.com/) with [Solarized](https://ethanschoonover.com/solarized/), [Powerline Shell](https://github.com/b-ryan/powerline-shell) and [Meslo Powerline Font](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf)
+
+* `Profiles` -> `Advanced` -> `Semantic History` -> `Open with editor...` -> `TextMate`
+
+### [Xcode](https://itunes.apple.com/nl/app/xcode/id497799835?l=en&mt=12)
+```
+xcode-select --install
+```
+
+### [Homebrew](https://brew.sh/)
+
+### ZSH
 ```
 brew install zsh zsh-completions
 chsh -s /bin/zsh
